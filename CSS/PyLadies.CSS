@@ -1,0 +1,400 @@
+/*Text, display, positioning & margins HTML & CSS all adapted from WEB APP DEV lecture slides, W3schools and HTMLdog tutorials
+
+Colors taken from https://www.w3schools.com/colors/colors_picker.asp
+*/
+
+
+body {
+    background-color: white;
+    text-transform: uppercase;
+    font-family: "Helvetica";
+    max-width: inherit;
+    height: auto;
+    box-sizing: border-box;
+    
+
+}
+   
+
+#logo {
+    float: left; 
+    margin-top: 20px;
+    margin-left: 30px;
+    display: inline-block;
+
+}
+
+/*Navigation bar HTML & CSS made with lists adapted from W3schools and Practical 3 from WEB APP DEV module: https://www.w3schools.com/css/css_navbar.asp */
+
+
+#nav {
+    list-style-type: none;
+    overflow: hidden;
+    text-align: right;
+    margin-bottom: 50px;
+
+}
+
+li {
+    display: inline-block;
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 50px;
+    text-transform: uppercase;
+
+}
+
+li a {
+    display: block;
+    font-family: "Helvetica";
+    color: #fb023d;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: none;
+    border-bottom: 1.5px solid #fb023d;
+    margin-bottom: -1px;
+    cursor: pointer;
+
+}
+
+footer {
+    text-align: center;
+    margin-top: 5px;
+    
+}
+.social {
+    margin: 0px 0px 15px 15px;
+    cursor: pointer;
+    
+}
+
+/*All images (main_image and social) taken from pexels.com and flaticon.com */
+
+/* How to centre main_image taken from Stackoverflow: https://stackoverflow.com/questions/7086281/html-css-image-wont-center */
+
+#main_image {
+    clear: left;
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+/*Button styling and Pseudo classes (hover/cursur) above and below based on tutorial from W3schools and HTMLdog: https://www.w3schools.com/css/css3_buttons.asp 
+http://www.htmldog.com/guides/css/intermediate/pseudoclasses/*/
+
+/* Transitions adated from W3schools tutorial: 
+https://www.w3schools.com/css/css3_transitions.asp
+*/
+
+
+.button {
+
+      border-radius: 4px;
+      background-color: #20b2aa;
+      border: none;
+      text-align: center;
+      font-size: 15px;
+      padding: 20px;
+      width: 50%;
+      transition: all 0.5s;
+      cursor: pointer;
+      text-decoration: none;
+
+    }
+
+.button:hover {
+  background: #1ca099;
+}
+
+.button a {
+    text-decoration: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+
+}
+
+#buttdiv {
+    text-align:center;
+    margin:auto;
+    padding: 10px;
+}
+
+
+#header1 {
+    margin-top: 10px;
+    text-align: center;
+    font-family: "Helvetica";
+    font-size: 60px;
+    font-weight: 300;
+	color: white;
+	text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.about_box{
+    max-width: 100%;
+    
+}
+
+
+.left {
+    width: 45%;
+    height: 300px;
+    float: left;
+    display: inline-block;
+    
+      
+}
+
+.right {
+    width: 50%;
+    height: 500px;
+    margin-left: 30px;
+    display: inline-block;
+    position: relative;
+
+      
+}
+.text_right {
+    
+    display: flex;
+    text-transform: none;
+    text-align: center;
+    margin-left: 30px;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.about_head {
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 30px;
+}
+
+
+/* Border radius used throughout from HTML Dog CSS tutoial: http://www.htmldog.com/guides/css/advanced/roundedcorners/ */
+
+.aboutimg {
+    max-width: 96%;
+    margin-left: 20px;
+    display:block;
+    border-radius: 8px;
+    
+}
+
+
+#organiseinfo {
+    width: 100%;
+    height: 650px;
+    
+}
+
+#organise_box {
+    width: 46%;
+      height: 600px;
+    float: left;
+    overflow: hidden;
+    display: inline-block;
+    box-sizing
+}
+
+.organise_head {
+    margin-left: 30px;
+    font-weight: 400;
+}
+
+.organise_text {
+    
+    margin-left: 30px;
+    text-transform: none;
+    text-align: center;
+    margin-left: 30px;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+
+/*list adated from HTML dog tutorial:
+http://www.htmldog.com/guides/html/beginner/lists/ */
+
+.listbox {
+    width: 50%;
+    height: 500px;
+    float: right;
+    display: inline-block;
+    box-sizing
+}
+
+#listinnerbox {
+    width: 250px;
+    display: inline-block;
+    overflow: hidden;
+    float: left;
+}
+
+#list{
+   
+    list-style: disc;
+    display:list-item;
+    text-align: left;
+    margin-right: 5px;
+    margin-top: 10px;
+    }
+
+/* Transitions adated from HTMLdog tutorial: http://www.htmldog.com/guides/css/advanced/transformations/ */ 
+
+.buttonlist {
+
+    border-radius: 4px;
+    display: inline-block;
+    background-color: #20b2aa;
+    border: none;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    width: 50%;
+    transition: all 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 60px;
+
+
+    }
+
+.buttonlist:hover {
+    background: #1ca099;
+}
+
+.buttonlist a {
+    text-decoration: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+
+}
+
+#buttdiv {
+    text-align:center;
+    margin:auto;
+    padding: 10px;
+}
+
+#tablediv {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 70%;
+    
+}
+
+/* HTML & CSS for table adadted from HTMLdog tutial: http://www.htmldog.com/guides/html/beginner/tables */
+
+table {
+    border: 5px solid lightgray;
+    padding; 20px;
+    margin-top: 50px;
+    border-collapse: collapse;
+    width: 100%;
+    padding-top: 30px;
+    margin-bottom: 10px
+    }
+
+
+/* Form HTML & CSS based on tutorial from HTMLdog and W3schools: http://www.htmldog.com/guides/html/beginner/forms/
+https://www.w3schools.com/html/html_forms.asp
+*/ 
+
+
+form {
+    padding; 20px;
+    margin-top: 50px;
+    border-collapse: collapse;
+    width: 100%;
+    padding-top: 30px;
+    margin-bottom: 40px
+    }
+
+input[type=text] {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=passwordx] {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+    
+input[type=submit] {
+    width: 40%;
+    background-color: #20b2aa;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+th {
+    overflow: hidden;
+
+
+}
+
+
+h3 {
+    text-align: center;
+    font-weight: 500;
+}
+
+h4, h5 {
+    text-transform: none;
+    text-align: center;
+    font-weight: 500;
+
+}
+
+h6 {
+    text-transform: none;
+    text-align: center;
+    font-weight: 500;
+        font-size: 20px;   
+}
+
+
+
+h6:hover{
+    text-decoration: underline;
+    font-size: 20px;
+    color: cornflowerblue;
+    cursor: pointer;
+
+}
+
+#resources {
+    text-align: left;
+    font-weight: 400;
+}
+
+.sociallinks{
+    text-decoration: none;
+}
+
+
